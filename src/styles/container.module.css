@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.logo-large {
+  display: block;
+  margin: 5px auto;
+}
+
+.me-pic {
+  display: block;
+  margin: 5px auto;
+  width: 100%;
+  max-width: 400px;
+}
+

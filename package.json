@@ -15,7 +15,29 @@
   },
   "dependencies": {
     "gatsby": "^4.6.0",
+    "gatsby-plugin-image": "^2.6.0",
+    "gatsby-plugin-postcss": "^5.9.0",
+    "gatsby-plugin-react-helmet": "^5.6.0",
+    "gatsby-plugin-sharp": "^4.6.0",
+    "gatsby-plugin-sitemap": "^5.6.0",
+    "gatsby-remark-images": "^6.9.0",
+    "gatsby-source-filesystem": "^4.6.0",
+    "gatsby-transformer-remark": "^5.6.0",
+    "postcss-css-variables": "^0.18.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  }
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.3.1"
+  },
+  "browserslist": [
+    "defaults",
+    "chrome >= 10",
+    "firefox >= 10",
+    "safari >= 10",
+    "opera >= 10",
+    "samsung >= 4",
+    "edge >= 15",
+    "ie >= 9",
+    "android >= 4",
+    "ios >= 6"
+  ]
 }
