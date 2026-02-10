@@ -9,7 +9,7 @@ const Blogs = ({ pageContext, data }) => {
     return (
         <Container>
             <h2><FaBlogger className="header-icon" />Posts</h2>
-            <div className="main flex-vertical-xs flex-horizontal-md">
+            <div className="main grid-vertical-xs grid-horizontal-md">
                 {data.allMarkdownRemark.edges.map(({ node }, index) => (
                     <div className="blog-post flex-vertical-xs" key={index}>
                       <span className="blog-title">
@@ -18,7 +18,7 @@ const Blogs = ({ pageContext, data }) => {
                         </Link>
                       </span>
                       <span className="blog-date">
-                          <i>Posted on:</i> 
+                          <i>Posted on:</i>
                           <strong>{node.frontmatter.date}</strong>
                       </span>
                       <p className="blog-body">
@@ -43,7 +43,7 @@ query ($skip: Int!, $limit: Int!) {
   ) {
     edges {
       node {
-        excerpt(pruneLength: 40)
+        excerpt(pruneLength: 60)
         frontmatter {
           title
           date(formatString: "YYYY-MM-DD")
