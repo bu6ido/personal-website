@@ -100,6 +100,15 @@
       grid-template-columns: repeat(1, 1fr);
     }
 
+    .one-line-clamp {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 1;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+
     .container {
       margin: var(--generic-gap);
       max-width: 1200px;
@@ -239,15 +248,6 @@
       flex: 0 1 auto;
     }
 
-    .blog-post .blog-title {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      line-clamp: 1;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
-    }
-
     .blog-post .blog-title:hover {
       background-color: var(--first-color);
       color: var(--third-color);
@@ -271,12 +271,6 @@
       word-break: keep-all;
       flex: 1 1 auto;
       max-height: 80px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      line-clamp: 1;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
     }
     
     .blog-post-single .blog-tags {

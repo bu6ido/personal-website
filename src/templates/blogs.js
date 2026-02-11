@@ -12,7 +12,7 @@ const Blogs = ({ pageContext, data }) => {
             <div className="main grid-vertical-xs grid-horizontal-md">
                 {data.allMarkdownRemark.edges.map(({ node }, index) => (
                     <div className="blog-post flex-vertical-xs" key={index}>
-                      <span className="blog-title">
+                      <span className="blog-title one-line-clamp">
                         <Link to={'/blogs' + node.fields.slug}>
                            {node.frontmatter.title}
                         </Link>
@@ -21,7 +21,7 @@ const Blogs = ({ pageContext, data }) => {
                           <i>Posted on:</i>
                           <strong>{node.frontmatter.date}</strong>
                       </span>
-                      <p className="blog-body">
+                      <p className="blog-body one-line-clamp">
                         {node.excerpt}
                       </p>
                     </div>
